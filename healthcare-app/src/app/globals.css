@@ -1,0 +1,648 @@
+/* Reset and global layout */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #007BFF; /* Blue background for all pages */
+  color: white;
+}
+
+/* Main home/search wrapper */
+.home-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Search box area */
+.search-area {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Popular searches section */
+.popular-searches {
+  margin-top: 20px;
+}
+
+.popular-searches button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.header a {
+  color: #374151;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #2563eb;
+}
+
+.header .login-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.header .login-button:hover {
+  background-color: #1e40af;
+}
+
+/* Auth page layout */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007BFF; /* Match app background */
+}
+
+/* Auth form container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: black;
+}
+
+/* Auth form fields */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.auth-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Auth button styling */
+.auth-form button {
+  padding: 12px;
+  background-color: #007BFF; /* Blue background for Sign In/Up */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.doctors-list {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.doctors-list h1 {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.doctor-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.doctor-card-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.doctor-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.book-btn,
+.contact-btn {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.contact-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+
+/* === Video Consult Page Styles === */
+.video-consult-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video-consult-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.video-consult-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #666;
+}
+
+.video-consult-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 32px;
+}
+
+.video-consult-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  padding-left: 24px;
+  position: relative;
+  color: #444;
+}
+
+.video-consult-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.video-consult-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.video-consult-btn:hover {
+  background-color: #019874;
+}
+
+.book-btn {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.book-btn:hover {
+  background-color: darkorange;
+}
+
+.main-content {
+  margin-top: 2rem; /* You can increase this if you want more space */
+  padding: 1rem;     /* Optional: adds padding to the page content */
+}
+
+.surgeries-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.surgeries-heading {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.surgeries-subtext {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.surgery-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.surgery-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.surgery-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+.corporate-container {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background-color: #1e3a8a; /* dark blue */
+  color: white;
+  border-radius: 12px;
+}
+
+.corporate-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.corporate-subtext {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #e0e7ff;
+}
+
+.corporate-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.corporate-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #c3dafe;
+}
+
+.corporate-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #f8fafc;
+}
+
+.connect-btn {
+  background-color: #2563eb; /* blue */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.connect-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.provider-container {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background-color: #0f172a; /* navy blue */
+  color: white;
+  border-radius: 12px;
+}
+
+.provider-heading {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.provider-subtext {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #e0e7ff;
+}
+
+.provider-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.provider-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #c3dafe;
+}
+
+.provider-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #f8fafc;
+}
+
+.provider-btn {
+  background-color: #10b981; /* emerald green */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.provider-btn:hover {
+  background-color: #059669;
+}
+
+.security-help-container {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  background-color: #1e3a8a; /* dark blue */
+  color: white;
+  border-radius: 12px;
+}
+
+.security-help-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.security-help-subtext {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #dbeafe;
+}
+
+.security-section {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.security-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #bfdbfe;
+}
+
+.security-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #f1f5f9;
+}
+
+.security-btn {
+  background-color: #ef4444; /* red */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.security-btn:hover {
+  background-color: #b91c1c;
+}
+
+
+.footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 20px 40px;
+  text-align: center;
+  border-top: 1px solid #374151;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #60a5fa;
+}
+
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 20s infinite;
+}
+
+
+/* globals.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/doctor-bg.jpg'); /* Image in public folder */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; /* Ensures text is visible */
+}
+
+.home-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: brightness(0.8); /* optional dimming effect */
+}
+
+.search-area {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar button {
+  background-color: #00bcd4;
+  color: white;
+  cursor: pointer;
+}
+
+.popular-searches {
+  margin-top: 20px;
+}
+
+.popular-searches button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+
